@@ -25,5 +25,5 @@ jobs:
       uses: azure/webapps-deploy@v3
       with:
         app-name: devops-class
-        publish-profile: ${{ secrets.AZURE_WEBAPP_PUBLISH_PORFILE }}
+        publish-profile: ${{ secrets.AZURE_WEBAPP_PUBLISH_PROFILE }}
         images: abdullha123/python-flask-app:latest
