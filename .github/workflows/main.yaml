@@ -18,7 +18,7 @@ jobs:
     - name: build and push docker image
       run: docker build -t python-flask-app .
     - name: docker tag 
-      run: docker tag python-flask-app:latest abdullha123/python-flask-app:latest
+      run: docker tag python-flask-app:latest abdullha123/python-flask-app:v1
     - name: docker push
       run: docker push abdullha123/python-flask-app:v1
     - name: Deploy to azure
