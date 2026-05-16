@@ -20,7 +20,7 @@ jobs:
     - name: docker tag 
       run: docker tag python-flask-app:latest abdullha123/python-flask-app:latest
     - name: docker push
-      run: docker push abdullha123/python-flask-app:latest
+      run: docker push abdullha123/python-flask-app:v1
     - name: Deploy to azure
       uses: azure/webapps-deploy@v3
       with:
